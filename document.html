@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 class="title" onclick="sayHello();">
+        Hello DOM tree
+    </h1>
+    <h1 id="hcl">
+        second h1
+    </h1>
+    <p class="title">
+        stam text
+    </p>
+    <ul>
+        <li>
+            <a>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+
+    <div id="default" onclick="(function(event){console.log('click me - div')})()">
+        <button onclick="(function(event){console.log('click me - button'); event.stopPropagation();})(event)">Click Me</button>
+    </div>
+
+    <form>
+        <label>
+            greeting
+        </label>
+        <input name="hello" type="text" />
+        <button type="submit">submit</button>
+    </form>
+
+    <h1>
+        forms
+    </h1>
+
+    <form method="get" action=".">
+        <input name="hello" type="text" required minlength="5" pattern="[0-9]+" />
+        <input name="date" type="date" />
+        <textarea name="multiline" cols="100" rows="10">
+
+        </textarea>
+        <input name="hiddenValue" type="hidden" value="10" />
+    </form>
+    <script src="document.js"></script>
+</body>
+</html>
