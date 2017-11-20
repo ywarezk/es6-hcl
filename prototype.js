@@ -14,7 +14,7 @@ Object.create(null);
 console.log('hasOwnProperty')
 console.log(myDict.hasOwnProperty('toString'));
 
-const myDict2 = Object.create();
+const myDict2 = Object.create(null);
 
 function Person(firstName, lastName){
     this.firstName = firstName;
@@ -36,6 +36,10 @@ function Student(firstName, lastName, grade) {
 
 Student.prototype = Object.create(Person.prototype);
 
+Student.prototype.fullName = function(){
+    return `from student: ${Student.prototype.__proto__.fullName.call(this)}`;
+}
 
-
+const newStudent = new Student('new', 'student', 100);
+console.log(newStudent.fullName());
 
