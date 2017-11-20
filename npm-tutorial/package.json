@@ -1,0 +1,16 @@
+{
+  "name": "npm-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^5.0.2",
+    "@angular/platform-browser": "^5.0.2",
+    "lodash": "^4.17.4"
+  }
+}
