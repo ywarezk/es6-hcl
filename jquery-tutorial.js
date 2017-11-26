@@ -1,3 +1,24 @@
-/**
- * Created by yarivkatz on 20/11/2017.
- */
+
+// jQuery Tutorial
+
+/// Selectors
+
+//// by id
+
+$('#hello');
+
+//// by class
+
+$('.title');
+
+//// selector first child
+
+$('#hello > h1');
+
+//// selector child
+
+$('#hello span');
+
+////
+
+$('');
