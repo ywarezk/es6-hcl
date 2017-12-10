@@ -2,3 +2,5 @@
 webpack-tutorial/package-lock.json
 webpack-tutorial/node_modules/
 babel-introduction/.idea/workspace.xml
+.idea/misc.xml
+.idea/
